@@ -1,0 +1,14 @@
+<div class="content-container">
+  <div *ngIf="movie !== undefined">
+    <img class="movie-cover" src="{{ movie.cover }}">
+    <p>Título: {{ movie.title }}</p>
+    <p>Año: {{ movie.year }}</p>
+    <p>Sinopsis: {{ movie.synopsis }}</p>
+
+    <div>
+      <a class="btn btn-outline-primary" [routerLink]="['/movies']">Volver al catálogo</a>
+      <a class="btn btn-outline-warning m-3" [routerLink]="['/movies/edit', movie.id]">Editar</a>
+      <a class="btn btn-outline-danger" (click)="deleteMovie(movie.id)">Eliminar</a>
+    </div>
+  </div>
+</div>

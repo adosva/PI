@@ -1,0 +1,14 @@
+body {
+  background-image: url('/assets/wp.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+.content-container {
+  background-color: white;
+  padding: 50px;
+  margin: 50px auto;
+  border-radius: 5px;
+  text-align: center;
+}

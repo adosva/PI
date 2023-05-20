@@ -1,0 +1,17 @@
+ul {
+  list-style: none;
+}
+
+.content-container {
+  text-align: left;
+}
+
+.movie-link {
+  color: black;
+  text-decoration: none;
+}
+
+.movie-cover {
+  max-width: 100px;
+  margin: 5px;
+}

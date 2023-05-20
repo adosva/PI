@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  height: 100px;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 20px;
+}

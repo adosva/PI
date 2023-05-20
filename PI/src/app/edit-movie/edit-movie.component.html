@@ -1,0 +1,57 @@
+<div class="content-container">
+  <form>
+    <div class="mb-3">
+      <label for="title" class="form-label">Título</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        required
+        [(ngModel)]="movie.title"
+        name="title"
+      />
+    </div>
+
+    <div class="mb-3">
+      <label for="year" class="form-label">Año</label>
+      <input
+        type="number"
+        class="form-control"
+        id="year"
+        required
+        [(ngModel)]="movie.year"
+        name="year"
+      >
+    </div>
+
+    <div class="mb-3">
+      <label for="synopsis" class="form-label">Sinopsis</label>
+      <input
+        type="text"
+        class="form-control"
+        id="synopsis"
+        required
+        [(ngModel)]="movie.synopsis"
+        name="synopsis"
+      >
+    </div>
+
+    <div class="mb-3">
+      <label for="cover" class="form-label">URL de Portada</label>
+      <input
+        type="text"
+        class="form-control"
+        id="cover"
+        required
+        [(ngModel)]="movie.cover"
+        name="cover"
+      >
+    </div>
+
+    <button
+      type="submit"
+      class="btn btn-primary"
+      (click)="saveMovie()"
+    >Guardar cambios</button>
+  </form>
+</div>

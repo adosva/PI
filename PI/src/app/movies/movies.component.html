@@ -1,0 +1,25 @@
+<div class="content-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Título</th>
+        <th scope="col">Opciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let movie of movies">
+        <td>
+          <a class="movie-link" [routerLink]="['/movies', movie.id]">
+            <img class="movie-cover" src="{{ movie.cover }}" alt="">
+            <span>{{ movie.title }}</span>
+          </a>
+        </td>
+        <td>
+          <a class="btn btn-warning m-3" [routerLink]="['/movies/edit', movie.id]">Editar</a>
+          <a class="btn btn-danger" (click)="deleteMovie(movie.id)">Eliminar</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
